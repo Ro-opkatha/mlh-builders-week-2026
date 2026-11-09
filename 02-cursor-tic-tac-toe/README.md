@@ -24,3 +24,11 @@ A Tic-Tac-Toe game in HTML, CSS, and vanilla JavaScript. Open it in a browser. T
 - Cells cannot be clicked while the computer is thinking or after the game ends.
 - Easy can play any empty cell. Medium takes a win over a block. Hard cannot be beaten if you play perfectly (the result is a draw).
 - The layout stays usable if you narrow the window to a phone width.
+
+## Screenshots
+
+### Player vs Player
+![Player vs Player](screenshots/player-vs-player.png)
+
+### Player vs Computer
+![Player vs Computer](screenshots/03-player-vs-user.png)
