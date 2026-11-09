@@ -28,7 +28,8 @@ A Tic-Tac-Toe game in HTML, CSS, and vanilla JavaScript. Open it in a browser. T
 ## Screenshots
 
 ### Player vs Player
-![Player vs Player](screenshots/player-vs-player.png)
+![Player vs Player](screenshots/01-player-vs-player.png)
 
 ### Player vs Computer
-![Player vs Computer](screenshots/03-player-vs-user.png)
+![Player vs Computer](screenshots/02-player-vs-computer.png)
+
