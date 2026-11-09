@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <p id="mode-label" class="eyebrow">Player vs player</p>
+        <h1>Tic-Tac-Toe</h1>
+      </header>
+
+      <div class="controls">
+        <div class="segmented" role="radiogroup" aria-label="Game mode">
+          <button type="button" class="segment is-selected" data-mode="pvp" aria-pressed="true">
+            Player vs Player
+          </button>
+          <button type="button" class="segment" data-mode="pvc" aria-pressed="false">
+            Player vs Computer
+          </button>
+        </div>
+
+        <div id="difficulty" class="segmented difficulties" role="radiogroup" aria-label="Difficulty" hidden>
+          <button type="button" class="segment is-selected" data-difficulty="easy" aria-pressed="true">
+            Easy
+          </button>
+          <button type="button" class="segment" data-difficulty="medium" aria-pressed="false">
+            Medium
+          </button>
+          <button type="button" class="segment" data-difficulty="hard" aria-pressed="false">
+            Hard
+          </button>
+        </div>
+      </div>
+
+      <section class="scoreboard" aria-label="Scoreboard">
+        <div class="score score-x">
+          <span id="score-x-label" class="score-label">X wins</span>
+          <span id="score-x" class="score-value">0</span>
+        </div>
+        <div class="score score-draw">
+          <span class="score-label">Draws</span>
+          <span id="score-draws" class="score-value">0</span>
+        </div>
+        <div class="score score-o">
+          <span id="score-o-label" class="score-label">O wins</span>
+          <span id="score-o" class="score-value">0</span>
+        </div>
+      </section>
+
+      <p id="status" class="status" role="status" aria-live="polite">
+        Player X's turn
+      </p>
+
+      <div id="board" class="board" role="grid" aria-label="Tic-tac-toe board">
+        <button type="button" class="cell" data-index="0" aria-label="Row 1, column 1"></button>
+        <button type="button" class="cell" data-index="1" aria-label="Row 1, column 2"></button>
+        <button type="button" class="cell" data-index="2" aria-label="Row 1, column 3"></button>
+        <button type="button" class="cell" data-index="3" aria-label="Row 2, column 1"></button>
+        <button type="button" class="cell" data-index="4" aria-label="Row 2, column 2"></button>
+        <button type="button" class="cell" data-index="5" aria-label="Row 2, column 3"></button>
+        <button type="button" class="cell" data-index="6" aria-label="Row 3, column 1"></button>
+        <button type="button" class="cell" data-index="7" aria-label="Row 3, column 2"></button>
+        <button type="button" class="cell" data-index="8" aria-label="Row 3, column 3"></button>
+      </div>
+
+      <button id="restart" class="restart" type="button">Restart Game</button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
