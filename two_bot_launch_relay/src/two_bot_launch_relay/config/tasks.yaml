@@ -1,0 +1,80 @@
+
+source_research_task:
+  description: >
+    Review the public BookMyShow Kolkata events listing at {source_url}.
+    Use only verified information. Do not invent event names, dates,
+    venues, prices, or performers. Clearly distinguish unknown details.
+    The user has already reviewed and approved the source brief.
+    This task is retained for the research workflow and is not being
+    rerun during the current approved production phase.
+  expected_output: >
+    A source brief with verified findings, unknown information,
+    source links, and limitations.
+  agent: source_editor
+
+launch_production_task:
+  description: >
+    You are the Launch Producer. You are creating promotional copy
+    for the BookMyShow Kolkata event-discovery listing, NOT announcing
+    a new event called Two Bot Launch Relay.
+
+    Use only the verified facts in this approved source brief:
+    {source_brief_content}
+
+    Write an energetic, engaging, professional announcement for
+    students and young professionals in Kolkata.
+
+    Requirements:
+    - Write 120 to 180 words.
+    - Promote browsing the BookMyShow Kolkata event listing.
+    - You may mention only categories and discovery features supported
+      by the source brief.
+    - Do not invent event names, dates, venues, performers, prices,
+      discounts, availability, speakers, or schedules.
+    - Do not claim that a particular event is currently available.
+    - Do not describe this as a Two Bot Launch Relay event.
+    - Include this exact call to action:
+      {call_to_action}
+
+    Return only the announcement text. Do not include a title,
+    explanation, CSV, or commentary.
+  expected_output: >
+    Only the 120-180 word announcement text, with the exact
+    requested call to action and no unsupported event claims.
+  agent: launch_producer
+
+quality_assurance_task:
+  description: >
+    You are the Source Editor performing final quality assurance.
+    The following are the actual contents of the deliverables.
+    Review the content provided here; do not ask the user to paste
+    files and do not assume that files exist without evidence.
+
+    APPROVED SOURCE BRIEF:
+    {source_brief_content}
+
+    ANNOUNCEMENT DRAFT:
+    {announcement_content}
+
+    RUN-OF-SHOW CSV:
+    {run_of_show_content}
+
+    Check:
+    1. The announcement promotes the BookMyShow Kolkata listing.
+    2. Claims are supported by the source brief.
+    3. No specific event details or availability have been invented.
+    4. The exact requested call to action is present.
+    5. The announcement is between 120 and 180 words.
+    6. The CSV has exactly these headers:
+       Time,Owner,Action,Status
+    7. The CSV has at least five data rows, with four fields per row.
+    8. The run-of-show describes draft preparation and review,
+       not an invented public event agenda.
+    9. Nothing has been published, sent, or distributed.
+
+    Be strict. If any check fails, report FAIL and list the precise
+    corrections. Otherwise report PASS and briefly explain why.
+  expected_output: >
+    A concise QA report beginning with PASS or FAIL and explaining
+    the checks and any corrections required.
+  agent: source_editor

@@ -1,0 +1,12 @@
+Source Editor: User approval confirmed.
+Source Editor: Invoking Launch Producer.
+Launch Producer: Announcement saved.
+Launch Producer: Run-of-show CSV prepared.
+Producer result:
+Discover Kolkata's vibrant scene on BookMyShow! Students and young professionals can effortlessly explore thousands of upcoming events tailored just for you. Browse through carefully curated categories like workshops, music shows, comedy, conferences, screenings, yoga, art exhibitions, and more to find your next passion project or social gathering. The platform allows you to sort listings by venue, date, or price to match your specific schedule and budget needs perfectly. Whether you're looking for a creative meetup, an educational talk, or a fun night out, our dynamic discovery tools ensure you never miss a moment. Simply visit the official listing page to access real-time updates on thousands of verified opportunities across the city. Don't let good experiences slip through your fingers; take control of your entertainment and networking today by exploring the full catalog now. Explore the listing and book tickets for an event that interests you.
+
+Source Editor: QA phase completed.
+QA result:
+PASS
+
+The announcement successfully promotes the BookMyShow Kolkata listing while adhering to all constraints: it is between 120-180 words, contains no invented event details, includes the exact call-to-action ("Explore the listing and book tickets for an event that interests you"), and accurately reflects the verified findings in the source brief. The run-of-show CSV has the correct headers, five data rows with four fields each, and describes draft preparation without inventing public events. No content has been published or distributed.

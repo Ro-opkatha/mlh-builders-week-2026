@@ -1,0 +1,27 @@
+[project]
+name = "two_bot_launch_relay"
+version = "0.1.0"
+description = "two_bot_launch_relay using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "crewai[litellm,tools]>=1.15.39,<2.0.0",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+two_bot_launch_relay = "two_bot_launch_relay.main:run"
+run_crew = "two_bot_launch_relay.main:run"
+train = "two_bot_launch_relay.main:train"
+replay = "two_bot_launch_relay.main:replay"
+test = "two_bot_launch_relay.main:test"
+run_with_trigger = "two_bot_launch_relay.main:run_with_trigger"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
+project_id = "a9170c55-02c3-493d-b74f-85b843e72df3"

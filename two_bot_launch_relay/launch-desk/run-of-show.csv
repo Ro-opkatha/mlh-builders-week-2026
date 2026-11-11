@@ -1,0 +1,7 @@
+Time,Owner,Action,Status
+T-60 min,Source Editor,Confirm the approved source brief and source link,Planned
+T-45 min,Launch Producer,Prepare the announcement using verified listing information,Planned
+T-30 min,Launch Producer,Prepare the run-of-show and save both draft files,Planned
+T-20 min,Source Editor,"Check factual claims, source consistency, and word count",Planned
+T-10 min,Source Editor,Validate CSV structure and record QA findings,Planned
+Before release,User,Review and approve the drafts; do not publish or send,Pending approval
