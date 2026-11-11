@@ -91,7 +91,7 @@ I'm using Builder's Week as an opportunity to step outside my comfort zone, expl
 ## 🌐 Connect With Me
 
 - [GitHub](https://github.com/Ro-opkatha)
-- [LinkedIn](www.linkedin.com/in/roopkatha-bhattacharjee-212216328)
+- [LinkedIn](https://www.linkedin.com/in/roopkatha-bhattacharjee-212216328/)
 
 ---
 
